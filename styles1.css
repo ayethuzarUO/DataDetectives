@@ -1,0 +1,136 @@
+:root {
+  --green: #047A40;
+  --green-dark: #035c30;
+  --lime: #D8F328;
+  --yellow: #FFDE24;
+  --ink: #1a2b22;
+  --paper: #ffffff;
+  --paper-soft: #f4f8f3;
+  --border: #e1e8de;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.5;
+}
+
+.site-header {
+  background: var(--green);
+  color: var(--paper);
+  padding: 3rem 1.5rem;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--lime);
+  margin: 0 0 0.5rem;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 640px;
+  color: #e7f5ec;
+  font-size: 1.05rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 1rem;
+}
+
+.topic {
+  margin-bottom: 2.75rem;
+}
+
+.topic h2 {
+  margin: 0 0 1.1rem;
+  font-size: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--green-dark);
+}
+
+.tag-a { background: var(--lime); }
+.tag-b { background: var(--yellow); }
+.tag-c { background: var(--lime); }
+.tag-d { background: var(--yellow); }
+.tag-e { background: #d6e9dc; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--paper-soft);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
+
+.card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.02rem;
+  color: var(--green-dark);
+}
+
+.card p {
+  margin: 0 0 0.75rem;
+  font-size: 0.92rem;
+  color: #3c4a41;
+}
+
+.source {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--green);
+}
+
+.site-footer {
+  max-width: 900px;
+  margin: 1rem auto 3rem;
+  padding: 0 1.5rem;
+  color: #6b776e;
+  font-size: 0.85rem;
+}
