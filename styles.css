@@ -53,6 +53,25 @@ body {
   font-size: 1.05rem;
 }
 
+.locker-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  background: var(--lime);
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.locker-link:hover,
+.locker-link:focus-visible {
+  background: var(--yellow);
+  transform: translateY(-1px);
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
